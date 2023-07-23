@@ -49,7 +49,7 @@ export default function HomeClient() {
     <Container as={Stack} spacing={4} maxW="container.xl">
       <Stack spacing={0}>
         <Heading as="h1" size="xl" mb={3}>
-          Rank your favourite website.
+          Rank your fav website.
         </Heading>
         <Text fontSize="xl">
           You are given a choice of five different websites. Please rank them
