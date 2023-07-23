@@ -11,19 +11,21 @@ import {
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 
-type Ranking = {
-  website: string;
-  rank: number;
-};
-
 export default function HomeClient() {
   // current rankings
   const [rankings, setRankings] = useState(fiveWebsites);
 
+  /**
+   * changeOrder
+   * @date 7/22/2023 - 11:34:19 PM
+   * @description change the order of the rankings
+   * Precondition (things we assume works):
+   * - the rankings are in the correct order
+   * - the rankings already exist in the rankings array -- no need to check
+   *
+   * @param {React.ChangeEvent<HTMLSelectElement>} e the event parameter
+   */
   const changeOrder = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    // pre condition: rankings is an array of strings and the name exists
-    // in the array
-
     // website
     const website = e.target.name;
     // new index
